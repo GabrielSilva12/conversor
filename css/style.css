@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+    width: 90%;
+margin: auto;
+    height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 25px;
+}
+
+h1{
+    text-align: center;
+margin-bottom: 50px;
+font-family: 'Poppins' , sans-serif;
+font-size: 35px;
+}
+
+.temperatura-container{
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+.select{
+width: 100%;
+    max-width: 150px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+background-color: white;
+
+box-sizing: border-box;
+border-radius: 5px;
+border: 1px solid #c3c3c3;
+}
+
+select{
+ width: 100%;
+ height: 100%;
+ background: none;
+border: none;
+outline: none;
+padding-left: 5px;
+
+color: #212121;
+}
+
+.input{
+    width: 200px;
+height: 30px;
+border: 1px solid #c3c3c3;
+border-radius: 5px;
+}
+.input input{
+    width: 100%;
+    background:none;
+    border: none;
+    outline: none;
+padding-left: 5px;
+padding-right: 5px;
+height: 100%;
+text-align: center;
+
+
+}
+
+
+.input input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.btn{
+    width: 100px;
+height: 30px;
+background-color: #000;
+border: none;
+border-radius: 5px;
+color: white;
+font-family: 'Poppins' , sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: .2s;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.911);
+
+}
+.btn img{
+    width: 20px;
+}
+.result{
+    text-align: center;
+}
+.result h1{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 25px;
+    
+
+}
+.result span:nth-child(1){
+    color: red;
+    margin-right: 3px;
+}
+.result span:nth-child(2){
+    color: burlywood;
+    margin-left: 3px;
+}
+@media (max-width: 686px){
+   .temperatura-container{
+       flex-direction: column;
+   }
+   .select {
+       width: 100%;
+       max-width: 100%;
+    }
+   .input{
+       width: 100%;
+   }
+   .btn{
+       width: 100%;
+   }
+}
